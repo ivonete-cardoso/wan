@@ -46,7 +46,6 @@
     display: block;
 }
 
-
 .container{
     display: flex;
     align-items: center;
@@ -59,6 +58,9 @@
 .container__titulo{
     display: none;
     
+}
+.opções{
+    display: none;
 }
 
 @media screen and (min-width: 1024px){
@@ -79,12 +81,27 @@
         align-items: center;
         text-transform: uppercase;
     }
+
     .opções__item{
         padding: 0 1em;
     }
-    .opções__Link{
+
+    .opções__link{
         text-decoration: none;
         color: var(--preto);
-       
+    
+    }
+    .container__imagem--transparente{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+    .opções__botão{
+        display: none;
+    }
+    .opções__botão:checked~.lista-menu{
+        display: block;
+        width: auto;
     }
 }
